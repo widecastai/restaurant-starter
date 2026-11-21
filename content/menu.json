@@ -1,0 +1,165 @@
+{
+  "restaurant": {
+    "name": "Lotus Lane Kitchen",
+    "tagline": "Vietnamese street food, made fresh every day",
+    "description": "A neighborhood Vietnamese kitchen. Slow-simmered phở, crispy bánh mì and fresh herbs in every bowl.",
+    "currency": "USD",
+    "demo": true,
+    "hero_image": "images/hero.jpg"
+  },
+  "categories": [
+    {
+      "name": "Starters",
+      "items": [
+        {
+          "slug": "crispy-spring-rolls",
+          "name": "Crispy Spring Rolls (Chả giò)",
+          "description": "Golden pork and vegetable rolls with lettuce, herbs and nước chấm dipping sauce.",
+          "price": 7.5,
+          "image": "images/crispy-spring-rolls.jpg",
+          "alt": "Crispy Spring Rolls (Chả giò): golden pork and vegetable rolls with lettuce, herbs and nước chấm dipping sauce"
+        },
+        {
+          "slug": "fresh-summer-rolls",
+          "name": "Fresh Summer Rolls (Gỏi cuốn)",
+          "description": "Rice paper rolls with shrimp, vermicelli and herbs, served with peanut sauce.",
+          "price": 7.0,
+          "image": "images/fresh-summer-rolls.jpg",
+          "alt": "Fresh Summer Rolls (Gỏi cuốn): rice paper rolls with shrimp, vermicelli and herbs, served with peanut sauce"
+        }
+      ]
+    },
+    {
+      "name": "Phở & Noodles",
+      "items": [
+        {
+          "slug": "beef-pho",
+          "name": "Beef Phở",
+          "description": "Rice noodles in a 12-hour beef broth with sliced beef, basil, lime and bean sprouts.",
+          "price": 14.5,
+          "image": "images/beef-pho.jpg",
+          "alt": "Beef Phở: rice noodles in a 12-hour beef broth with sliced beef, basil, lime and bean sprouts"
+        },
+        {
+          "slug": "chicken-pho",
+          "name": "Chicken Phở",
+          "description": "Light chicken broth, rice noodles, shredded chicken, scallions and herbs.",
+          "price": 13.5,
+          "image": "images/chicken-pho.jpg",
+          "alt": "Chicken Phở: light chicken broth, rice noodles, shredded chicken, scallions and herbs"
+        },
+        {
+          "slug": "seafood-pho",
+          "name": "Seafood Phở",
+          "description": "Shrimp and squid in a clear broth with rice noodles and fresh herbs.",
+          "price": 16.0,
+          "image": "images/seafood-pho.jpg",
+          "alt": "Seafood Phở: shrimp and squid in a clear broth with rice noodles and fresh herbs"
+        },
+        {
+          "slug": "lemongrass-beef-vermicelli",
+          "name": "Lemongrass Beef Vermicelli",
+          "description": "Grilled lemongrass beef over cool vermicelli, herbs, pickles and peanuts.",
+          "price": 15.0,
+          "image": "images/lemongrass-beef-vermicelli.jpg",
+          "alt": "Lemongrass Beef Vermicelli: grilled lemongrass beef over cool vermicelli, herbs, pickles and peanuts"
+        },
+        {
+          "slug": "shrimp-vermicelli-salad",
+          "name": "Shrimp Vermicelli Salad",
+          "description": "Shrimp, vermicelli, crunchy vegetables and chili-lime dressing.",
+          "price": 15.5,
+          "image": "images/shrimp-vermicelli-salad.jpg",
+          "alt": "Shrimp Vermicelli Salad: shrimp, vermicelli, crunchy vegetables and chili-lime dressing"
+        }
+      ]
+    },
+    {
+      "name": "Rice & Bánh mì",
+      "items": [
+        {
+          "slug": "broken-rice-plate",
+          "name": "Broken Rice Plate (Cơm tấm)",
+          "description": "Grilled pork chop over broken rice with pickles, egg and scallion oil.",
+          "price": 15.0,
+          "image": "images/broken-rice-plate.jpg",
+          "alt": "Broken Rice Plate (Cơm tấm): grilled pork chop over broken rice with pickles, egg and scallion oil"
+        },
+        {
+          "slug": "classic-banh-mi",
+          "name": "Classic Bánh mì",
+          "description": "Crusty baguette with pâté, cold cuts, pickled carrot, cucumber and cilantro.",
+          "price": 9.0,
+          "image": "images/classic-banh-mi.jpg",
+          "alt": "Classic Bánh mì: crusty baguette with pâté, cold cuts, pickled carrot, cucumber and cilantro"
+        },
+        {
+          "slug": "grilled-pork-banh-mi",
+          "name": "Grilled Pork Bánh mì",
+          "description": "Caramelized grilled pork, pickles, chili and fresh herbs.",
+          "price": 9.5,
+          "image": "images/grilled-pork-banh-mi.jpg",
+          "alt": "Grilled Pork Bánh mì: caramelized grilled pork, pickles, chili and fresh herbs"
+        }
+      ]
+    },
+    {
+      "name": "Drinks",
+      "items": [
+        {
+          "slug": "iced-coffee",
+          "name": "Vietnamese Iced Coffee",
+          "description": "Strong phin-dripped coffee with sweet condensed milk over ice.",
+          "price": 5.5,
+          "image": "images/iced-coffee.jpg",
+          "alt": "Vietnamese Iced Coffee: strong phin-dripped coffee with sweet condensed milk over ice"
+        },
+        {
+          "slug": "iced-lemon-tea",
+          "name": "Iced Lemon Tea",
+          "description": "Black tea, fresh lemon and a little sugar.",
+          "price": 4.0,
+          "image": "images/iced-lemon-tea.jpg",
+          "alt": "Iced Lemon Tea: black tea, fresh lemon and a little sugar"
+        },
+        {
+          "slug": "fresh-limeade",
+          "name": "Fresh Limeade",
+          "description": "Squeezed to order, lightly sweet.",
+          "price": 4.5,
+          "image": "images/fresh-limeade.jpg",
+          "alt": "Fresh Limeade: squeezed to order, lightly sweet"
+        },
+        {
+          "slug": "young-coconut",
+          "name": "Young Coconut",
+          "description": "Served chilled in the shell.",
+          "price": 6.0,
+          "image": "images/young-coconut.jpg",
+          "alt": "Young Coconut: served chilled in the shell"
+        }
+      ]
+    },
+    {
+      "name": "Desserts",
+      "items": [
+        {
+          "slug": "mango-sticky-rice",
+          "name": "Mango Sticky Rice",
+          "description": "Sweet coconut sticky rice with ripe mango.",
+          "price": 8.0,
+          "image": "images/mango-sticky-rice.jpg",
+          "alt": "Mango Sticky Rice: sweet coconut sticky rice with ripe mango"
+        },
+        {
+          "slug": "pandan-coconut-jelly",
+          "name": "Pandan Coconut Jelly (Chè)",
+          "description": "Pandan jelly in chilled coconut milk.",
+          "price": 6.5,
+          "image": "images/pandan-coconut-jelly.jpg",
+          "alt": "Pandan Coconut Jelly (Chè): pandan jelly in chilled coconut milk"
+        }
+      ]
+    }
+  ]
+}
