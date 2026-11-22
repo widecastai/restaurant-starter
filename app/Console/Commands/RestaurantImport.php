@@ -89,6 +89,8 @@ class RestaurantImport extends Command
                 if (array_key_exists('default', $field)) $themeData[$key] = $field['default'];
             }
             $themeData = array_merge($themeData, (array) $theme->data, ['logo_image' => null, 'logo_text' => $name]);
+            // Demo banner on every customer page while menu.json says "demo": true (themes/lotus-lane/includes/header.blade.php)
+            $themeData['demo'] = !empty($r['demo']);
             if (!empty($r['primary_color'])) {
                 // The Orange theme's CSS is pre-built with orange (#ff4900) baked in, so we add
                 // a small CSS override that repaints every orange shade in the main colour.

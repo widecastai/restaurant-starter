@@ -17,5 +17,6 @@ You make it your own restaurant by talking to Codex.
 | Dish photos | `content/images/` |
 | Reload the menu after changes | terminal: `php artisan restaurant:import` |
 | Rules Codex follows in this project | `AGENTS.md` |
+| Demo banner ("Demo — orders are not real" on every page) | `"demo": true` in `content/menu.json` · `themes/lotus-lane/includes/header.blade.php` |
 
 TastyIgniter is MIT-licensed (see `LICENSE.md`), © TastyIgniter.
