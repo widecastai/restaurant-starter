@@ -45,6 +45,9 @@ class RestaurantImport extends Command
             'sender_name' => $name,
             'site_email' => $r['email'] ?? 'hello@example.test',
             'sender_email' => $r['email'] ?? 'hello@example.test',
+            // Demo banner on every customer page while menu.json says "demo": true
+            // (shown by themes/lotus-lane/includes/header.blade.php)
+            'restaurant_demo' => !empty($r['demo']) ? 1 : 0,
         ]);
 
         if (!empty($r['currency']) && ($currency = Currency::query()->where('currency_code', $r['currency'])->first())) {
@@ -89,8 +92,6 @@ class RestaurantImport extends Command
                 if (array_key_exists('default', $field)) $themeData[$key] = $field['default'];
             }
             $themeData = array_merge($themeData, (array) $theme->data, ['logo_image' => null, 'logo_text' => $name]);
-            // Demo banner on every customer page while menu.json says "demo": true (themes/lotus-lane/includes/header.blade.php)
-            $themeData['demo'] = !empty($r['demo']);
             if (!empty($r['primary_color'])) {
                 // The Orange theme's CSS is pre-built with orange (#ff4900) baked in, so we add
                 // a small CSS override that repaints every orange shade in the main colour.

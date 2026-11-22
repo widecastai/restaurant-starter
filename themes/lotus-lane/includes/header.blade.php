@@ -1,8 +1,8 @@
 {{-- Restaurant theme: the Orange theme's header, plus the Demo banner.
      The banner shows on every customer page while content/menu.json says "demo": true
-     (php artisan restaurant:import copies that flag into this theme's settings).
+     (php artisan restaurant:import saves that flag as the setting restaurant_demo).
      It tells visitors this restaurant is a class demo: orders are not real. Keep it. --}}
-@if($theme->demo ?? false)
+@if(setting('restaurant_demo'))
 <div class="demo-banner" role="note">
     <strong>Demo</strong> — orders are not real
 </div>
