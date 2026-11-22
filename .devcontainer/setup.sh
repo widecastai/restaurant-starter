@@ -21,5 +21,6 @@ sed -i 's/protected \$proxies;/protected $proxies = "*";/' app/Http/Middleware/T
 grep -q '^APP_KEY=base64' .env || php artisan key:generate --force
 for i in $(seq 1 60); do mysqladmin ping -h127.0.0.1 -uti -pti-local-only --silent && break; sleep 2; done
 php artisan igniter:install --no-interaction || true
-if php artisan list 2>/dev/null | grep -q "restaurant:import"; then php artisan restaurant:import content/menu.json; fi
+php artisan restaurant:import content/menu.json
+php artisan restaurant:admin
 echo "== setup done $(date -u +%T)"

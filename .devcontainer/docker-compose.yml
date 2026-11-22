@@ -3,6 +3,8 @@ services:
     build: { context: ., dockerfile: Dockerfile }
     volumes: [ "../..:/workspaces:cached" ]
     command: sleep infinity
+    environment:
+      XDEBUG_MODE: "off"
     network_mode: service:db
   db:
     image: mysql:8.0

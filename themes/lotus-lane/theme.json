@@ -1,0 +1,22 @@
+{
+    "code": "lotus-lane",
+    "name": "Restaurant theme",
+    "description": "This restaurant's look. Built on the Orange theme: files here override the Orange theme's files with the same path.",
+    "parent": "igniter-orange",
+    "version": "v4.4.0",
+    "author": "Restaurant starter",
+    "homepage": "",
+    "require": {
+        "igniter.broadcast": "*",
+        "igniter.cart": "*",
+        "igniter.coupons": "*",
+        "igniter.frontend": "*",
+        "igniter.local": "*",
+        "igniter.pages": "*",
+        "igniter.payregister": "*",
+        "igniter.reservation": "*",
+        "igniter.socialite": "*",
+        "igniter.translate": "*",
+        "igniter.user": "*"
+    }
+}

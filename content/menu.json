@@ -3,7 +3,16 @@
     "name": "Lotus Lane Kitchen",
     "tagline": "Vietnamese street food, made fresh every day",
     "description": "A neighborhood Vietnamese kitchen. Slow-simmered phở, crispy bánh mì and fresh herbs in every bowl.",
+    "email": "hello@lotuslane.test",
+    "telephone": "+1 555 0142",
+    "address": {
+      "street": "88 Lotus Lane",
+      "city": "Springfield",
+      "postcode": "00000",
+      "country": "US"
+    },
     "currency": "USD",
+    "primary_color": "#2E7D5B",
     "demo": true,
     "hero_image": "images/hero.jpg"
   },
