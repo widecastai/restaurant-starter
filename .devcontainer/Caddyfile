@@ -1,0 +1,24 @@
+# Port 8000: Caddy serves files from public/ (photos, CSS) and passes pages to Laravel on 8080.
+# (PHP's built-in server cuts large files short behind the Codespaces proxy.)
+{
+	admin off
+	auto_https off
+}
+:8000 {
+	root * {$APP_ROOT}/public
+	@static file
+	handle @static {
+		file_server
+	}
+	@codespaces header X-Forwarded-Host *
+	handle @codespaces {
+		reverse_proxy 127.0.0.1:8080 {
+			# keep the https address seen by Codespaces' proxy
+			header_up X-Forwarded-Proto {http.request.header.X-Forwarded-Proto}
+			header_up X-Forwarded-Host {http.request.header.X-Forwarded-Host}
+		}
+	}
+	handle {
+		reverse_proxy 127.0.0.1:8080
+	}
+}
