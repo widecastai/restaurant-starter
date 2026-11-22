@@ -4,10 +4,12 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 LOG=/tmp/setup.log; exec > >(tee -a "$LOG") 2>&1
 echo "== setup start $(date -u +%T)"
+trap 'echo "== SETUP FAILED at line $LINENO. Ask Codex: read /tmp/setup.log and explain the error in plain words."' ERR
 if [ ! -f artisan ]; then
   composer create-project --no-interaction --prefer-dist tastyigniter/tastyigniter /tmp/ti
   cp -rn /tmp/ti/. ./ ; rm -rf /tmp/ti
 fi
+mkdir -p storage/framework/{cache/data,sessions,views,testing} storage/logs bootstrap/cache
 composer install --no-interaction --prefer-dist
 [ -f .env ] || cp .env.example .env
 URL="http://localhost:8000"
