@@ -18,6 +18,8 @@ set_env(){ grep -q "^$1=" .env && sed -i "s|^$1=.*|$1=$2|" .env || echo "$1=$2" 
 set_env APP_URL "$URL"; set_env DB_CONNECTION mysql; set_env DB_HOST 127.0.0.1; set_env DB_PORT 3306
 set_env DB_DATABASE tastyigniter; set_env DB_USERNAME ti; set_env DB_PASSWORD ti-local-only
 set_env APP_ENV local; set_env APP_DEBUG true
+# Build links from the address the learner opened (Ports globe, preview, localhost), so the page never loses its CSS
+set_env IGNITER_URL_POLICY detect
 # Codespaces serves the app through an https proxy: trust it so links and photos use https
 sed -i 's/protected \$proxies;/protected $proxies = "*";/' app/Http/Middleware/TrustProxies.php
 grep -q '^APP_KEY=base64' .env || php artisan key:generate --force
