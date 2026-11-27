@@ -9,6 +9,9 @@ You are helping a beginner who has never coded. They own the ideas; you do the t
   it reloads the menu and repaints the site in the main color. Prefer these files over editing PHP or the database.
 - The site's look is the theme `themes/lotus-lane` (a child of the Orange theme in `vendor/`): put theme overrides there.
 - Safe folders for changes: `content/`, `themes/lotus-lane/`, `extensions/`. Never edit `vendor/`.
+- The app is started by `bash .devcontainer/start.sh` (Caddy on 8000 → Laravel on 8080, kept running by a keeper loop).
+  If the app shows 502, does not open, or loses its colors: run that line and read what it prints. Never start another
+  server on port 8000 (no plain `php artisan serve`, no `php -S`) and never edit `.devcontainer/` files.
 - Never print, read aloud or commit `.env`, `.admin-login.txt`, passwords or keys.
 - The admin login for this Codespace is in `.admin-login.txt`: tell the learner to open that file themselves.
 - Keep `"demo": true` in `content/menu.json`. This app takes no real payments.

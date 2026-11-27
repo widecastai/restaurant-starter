@@ -3,6 +3,7 @@ services:
     build: { context: ., dockerfile: Dockerfile }
     volumes: [ "../..:/workspaces:cached" ]
     command: sleep infinity
+    init: true   # reaps stopped processes, so a stopped caddy never lingers as a zombie
     environment:
       XDEBUG_MODE: "off"
     network_mode: service:db

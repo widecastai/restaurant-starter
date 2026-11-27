@@ -28,3 +28,5 @@ php artisan igniter:install --no-interaction || true
 php artisan restaurant:import content/menu.json
 php artisan restaurant:admin
 echo "== setup done $(date -u +%T)"
+# Start the app too, so "setup done" always means the shop is up (also safe when the Codespace start runs it again)
+bash .devcontainer/start.sh
